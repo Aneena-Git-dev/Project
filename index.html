@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Netflix</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <div class="logo">
+          <img
+            id="logo"
+            width="180"
+            src="data:image/png;base64,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"
+            alt=""
+          />
+        </div>
+
+        <div class="language_section">
+          <!-- <label class="languge_style" for="selectlanguage">English</label> -->
+          <select class="language" name="English" id="language">
+            <option label="English" value="En">English</option>
+            <option label="हिन्दी" value="Hi">Hindi</option>
+          </select>
+          <button class="signin">Sign In</button>
+        </div>
+      </div>
+      <section class="content">
+        <div class="slider">
+          <img
+            class="backgroung_image"
+            src="https://assets.nflxext.com/ffe/siteui/vlv3/158a0e2a-cca4-40f5-86b8-11ea2a281b06/web_tall_panel/IN-en-20241202-TRIFECTA-perspective_052fb757-35ce-4655-946e-3c9ffac95fd0_large.jpg"
+            alt=""
+          />
+        </div>
+      </section>
+      <section>
+        <div class="trending">
+          <h1>Trending Now</h1>
+          <div class="trending_container">
+            <div>
+              <img
+                class="trending_now"
+                src="https://occ-0-5690-3662.1.nflxso.net/dnm/api/v6/mAcAr9TxZIVbINe88xb3Teg5_OA/AAAABUl-M1nn4uvT21kBv5aAh-QoP2s0PcL3UUcXQj9KmtaDtGr6PCATQ7PQQJqktUF-KkjTJvtoktddyYH_id9IA8ivP8ep-x3SZ7Ri.webp?r=e1d"
+                alt=""
+              />
+            </div>
+            <div>
+              <img
+                class="trending_now"
+                src="https://occ-0-5690-3662.1.nflxso.net/dnm/api/v6/mAcAr9TxZIVbINe88xb3Teg5_OA/AAAABTaDIN651--r-vruakccicHzwwbfZ1eDr9DfLMWUTeXWDuy2g-CNRJmnr9Gr_JQOl7e38BbXlx6T2giLY7p1bds_wcCyn_5Gfn45.webp?r=595"
+                alt=""
+              />
+            </div>
+            <div>
+              <img
+                class="trending_now"
+                src="https://occ-0-5690-3662.1.nflxso.net/dnm/api/v6/mAcAr9TxZIVbINe88xb3Teg5_OA/AAAABQL-TL6-il4829DMvEQa44WHp5-01qUqiuXjgDUyG3BDrpCFlPkuW8sQD_hj0k9c4KOaEFXGl2nYWUeCsIhutAFcCsyQElPJUOkQ.webp?r=bf7"
+                alt=""
+              />
+            </div>
+            <div>
+              <img
+                class="trending_now"
+                src="https://occ-0-5690-3662.1.nflxso.net/dnm/api/v6/mAcAr9TxZIVbINe88xb3Teg5_OA/AAAABSfXLinHk6dDZHmD3B20xMcR6i4xYKJtGfInetLAAuzdatro-FDmWjHY0caBH9CNwQ1I2vh10t3sopJNtbxHnbkY54_pO2-hVhVDMFQPlTX1nFK0DV1OhoWOvl_cKfE0Z_NWGg.webp?r=3ab"
+                alt=""
+              />
+            </div>
+            <div>
+              <img
+                class="trending_now"
+                src="https://occ-0-5690-3662.1.nflxso.net/dnm/api/v6/mAcAr9TxZIVbINe88xb3Teg5_OA/AAAABSJTwCRepT3hij8CAbXVf-kGcmJ1rIVtD7wT2AmGY4nhIP6GyADv7jWfWR1B1MwfeAu3RuNdlyQNmYx50sACOm24YSD_biqKtHhJ.webp?r=680"
+                alt=""
+              />
+            </div>
+            <div>
+              <img
+                class="trending_now"
+                src="https://occ-0-5690-3662.1.nflxso.net/dnm/api/v6/mAcAr9TxZIVbINe88xb3Teg5_OA/AAAABTLqWgZqq9petPzMwBoXFit61cMkYL-VK9z0xoYXAuztzbELdng4YBwk-0KYl8rHbnyhLf-BbZlAVIg9qZwd5bdQ3qMzFQLyHg9DjgwBYkPm_9LbBWxaUywxXOMcGBk3SH12AA.webp?r=60b"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+        <div class="only_on_netflix">
+          <h1>Only on Netflix</h1>
+          <div class="on_netflix">
+            <div class="on_netflix_row">
+              <img
+                src="https://occ-0-5690-3662.1.nflxso.net/dnm/api/v6/mAcAr9TxZIVbINe88xb3Teg5_OA/AAAABRY13rE6hFZeP981fDAgmKTcN4P0SzIOzCS8PMVNcm1A41O8G1dqia0SGeBUzBvFiH3JX_ugRAq5nbRkhsb4FpQy6PLwZyRw5cTO7EjbrO8YX7-Pk2joGpoaBQYi6RwFo4p11Q.webp?r=3f5"
+                alt=""
+              />
+            </div>
+            <div class="on_netflix_row">
+              <img
+                src="https://occ-0-5690-3662.1.nflxso.net/dnm/api/v6/mAcAr9TxZIVbINe88xb3Teg5_OA/AAAABSaNExhdGyRm1Sd0E6lrqnWKhXMU-kLL_ydTGIX3DnQ9CEhteWUdGeZFCHhJF55t77q2mXYaS3oUZT9fn9BP_XAwspX76E7mCNbtlmdF0s5uhjwaTqIaisMPqB-705V3MoNYdQ.webp?r=470"
+                alt=""
+              />
+            </div>
+            <div class="on_netflix_row">
+              <img
+                src="https://occ-0-5690-3662.1.nflxso.net/dnm/api/v6/mAcAr9TxZIVbINe88xb3Teg5_OA/AAAABTDVDAaF8irUSwjeVkDpRR6dsVfiDVtp0GmxTq2OHuVPO6xTtVXZCYb3PUWImTW5_lhb4RzLyRo_gCNAGVBeBHBu9KFQGcP6BLthQArNiEtPu4BQB14k710nTLaATi3IS35pug.webp?r=04a"
+                alt=""
+              />
+            </div>
+            <div class="on_netflix_row">
+              <img
+                src="https://occ-0-5690-3662.1.nflxso.net/dnm/api/v6/mAcAr9TxZIVbINe88xb3Teg5_OA/AAAABW-d7ZXaidP5ykOiy-MSmgy-yVF1C4_68_poOkx-ZU04wLVevpoqkf3uEvHCsGZY_XipOSlNASQ0TfqWvjspCLE5-2AIVHHQY29oJC62Yd8PhSLBaZqzreyhaAmAM6Z7YQBBMg.webp?r=e79"
+                alt=""
+              />
+            </div>
+            <div class="on_netflix_row">
+              <img
+                src="https://occ-0-5690-3662.1.nflxso.net/dnm/api/v6/mAcAr9TxZIVbINe88xb3Teg5_OA/AAAABQ26mhDTxFE58n5Cwgwe_ReId62_vwDTsFu8zNv9aO1OW6SWAbCeGIN_th8eHMv2sdDSY1rk6STdF7r2GGLshF5ID25njhBE0IeNcasFwPxHlF33NAPTXgZOCOX_NhMUGbXnBg.webp?r=c7b"
+                alt=""
+              />
+            </div>
+            <div class="on_netflix_row">
+              <img
+                src="https://occ-0-5690-3662.1.nflxso.net/dnm/api/v6/mAcAr9TxZIVbINe88xb3Teg5_OA/AAAABQ0U16Omm3NmKivD23lnV3pX3wJkmKXSAFUX5yGe19twNnPnqyU9bW8JtGsM3AP6UNqlb6MA4OBboVR7gC8FuZJxqtNjaPaheZMcgpFHzKzayydDgZ5_31sfw5lwoyFZsxJ8sA.webp?r=e3c"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="more_reason_container">
+          <h1>More reasons to join</h1>
+          <div class="more_reason">
+            <div class="reason_content">
+              <span>Stories tailered to your taste</span>
+              <div class="icon">
+                <i  class="fa-solid fa-hand-holding-heart"></i>
+              </div>
+              
+              
+            </div>
+            <div class="reason_content">
+              <span>Cancel or switch plans anytime</span>
+              <div class="icon">
+                <i class="fa-solid fa-handshake"></i>
+              </div>
+            
+            </div>
+            <div class="reason_content">
+              <span>A place just for kids</span>
+              <div class="icon">
+                <i class="fa-solid fa-heart"></i>
+              </div>
+            
+            </div>
+            <div class="reason_content">
+              <span>For your phone,tablet,laptop and TV</span>
+              <div class="icon">
+                <i class="fa-solid fa-tv"></i>
+              </div>
+             
+            </div>
+          </div>
+          <div class="membership">
+            <div>
+                <button class="get_started">Get started</button>
+            </div>
+            <span>Create or restart your membership</span>
+          </div>
+         
+        </div>
+      </section>
+      <div class="footer">
+        <div>
+          <span id="questions">Questions?Call</span>
+          <a href="#">000-800-919-1743</a>
+        </div>
+        <div class="links">
+          <ul>
+            <li class="link"><a href="">FAQ</a></li>
+            <li class="link"><a href="">Investor Relations</a></li>
+            <li class="link"><a href="">Privacy</a></li>
+            <li class="link"><a href="">Speed Test</a></li>
+          </ul>
+          <ul>
+            <li class="link"><a href="">Help Centre</a></li>
+            <li class="link"><a href="">Jobs</a></li>
+            <li class="link"><a href="">Cookie Preferences</a></li>
+            <li class="link"><a href="">Legal Notices</a></li>
+          </ul>
+          <ul>
+            <li class="link"><a href="">Account</a></li>
+            <li class="link"><a href="">Ways to Watch</a></li>
+            <li class="link"><a href="">Corporate Information</a></li>
+            <li class="link"><a href="">Only on Netflix</a></li>
+          </ul>
+          <ul>
+            <li class="link"><a href="">Media Centre</a></li>
+            <li class="link"><a href="">Terms of Use</a></li>
+            <li class="link"><a href="">cContact Us</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

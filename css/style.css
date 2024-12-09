@@ -1,0 +1,188 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: #000;
+    font-family: "Roboto", serif;
+}
+.container {
+    width: 100%;
+    display: block;
+    
+}
+.header {
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.logo {
+
+    height: 100px;
+    width: 200px;
+}
+.language {
+    width: 140px;
+    height: 40px;
+    margin-top: 10px;
+    margin-right: 10px;
+    background-color: #000;
+    color: white;
+    border-radius: 30px;
+    font-size: large;
+    padding: 2px 27px;
+}
+button {
+    color: black;
+    background-color: whitesmoke;
+    font-size: large;
+    font-weight: bold;
+    width: 100px;
+    height: 40px;
+    border-radius: 30px;
+    margin-right: 10px;
+}
+#questions {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 1rem;
+    font-weight: 400;
+    margin-left: 250px;
+    
+}
+a {
+    color: rgba(255, 255, 255, 0.7);
+}
+.links {
+    margin-top: 80px;
+    padding: 0 100px;
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.link{
+    margin-top: 20px;
+    padding: 0 150px;
+
+}
+
+.slider{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+ }
+.backgroung_image{
+    width: 95%;
+    margin: 20px;
+    border: 1px white solid;
+    border-radius: 30px;
+    position: relative;
+}
+.text_image{
+  width: 300px;
+  position: absolute;
+}
+.subscription{
+    height: 100px;
+    width: 200px;
+    font-weight:bolder;
+    color: white;
+}
+.trending{
+    color: white;
+    padding: 0 50px;
+    margin: 42px 0;
+}
+.trending h1{
+    margin-bottom: 31px;
+    font-size: 40px;
+    padding: 0 56px;
+}
+.trending_container{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 56px;
+}
+.trending_container img{
+    border-radius: 10px;
+    margin-right: 5px;
+}
+.only_on_netflix{
+    color: white;
+    padding: 0 50px;
+    margin: 42px 0;
+}
+.only_on_netflix h1{
+    margin-bottom: 31px;
+    font-size: 40px;
+    padding: 0 56px;
+}
+.on_netflix{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 56px;
+}
+.on_netflix_row img{
+    border-radius: 10px;
+}
+.more_reason_container{
+    color: white;
+    
+}
+.more_reason_container h1{
+   
+    margin-bottom: 31px;
+    font-size: 40px;
+    padding: 0 100px;
+}
+.more_reason{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 100px;
+}
+.reason_content{
+    border:1px gray solid;
+    width: 25%;
+    font-size: 20px;
+    border-radius: 10px;
+    margin: 10px 20px;
+    padding: 30px;
+  
+   
+}
+.icon{
+    color:rgb(160, 35, 66);
+    font-size: 30px;
+    text-align: right;
+
+    
+}
+.icon i{
+    position: relative;
+    top: 12px;
+    right: -12px;
+}
+.membership{
+   text-align: center;
+   
+
+}
+.get_started{
+    background-color: red;
+    color: white;
+    width: auto;
+    font-size: 18px;
+    margin-top: 30px;
+    display: inline-block;
+    margin-bottom: 20px;
+    padding: 10px 40px;
+    
+}
+
+.footer{
+    margin-bottom: 40px;
+    margin-top: 50px;
+}
+
+
