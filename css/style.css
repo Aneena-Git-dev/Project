@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body {
@@ -194,9 +195,10 @@ a {
 
 .links {
     margin-top: 80px;
-    padding: 0 100px;
-    width: 60%;
+
+    width: 100%;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
 }
@@ -210,3 +212,69 @@ a {
     margin-bottom: 40px;
     margin-top: 50px;
 }
+#questions{
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 1rem;
+    font-weight: 400;
+    margin-left: 149px;
+
+}
+
+
+@media only screen and (max-width: 768px){
+
+    .reason_content {
+        width: 100%;
+    }
+
+    .more_reason {
+        width: 100%;
+        padding: 0;
+    }
+
+    .links {
+        width: 100%;
+        text-align: center;
+        display: block;
+        
+    
+    }
+
+    .trending_container{
+        width: 100%;
+        padding: 0;
+        justify-content: center;
+    }
+
+    .only_on_netflix {
+        width: 100%;
+        padding: 0;
+     
+    }
+    .link{
+        width: 100%;
+        padding: 0;
+        margin-left: 0;
+        text-align: center;
+   }
+   a{
+    margin-left: 0;
+    text-align: center;
+
+   }
+    .on_netflix{
+        width: 100%;
+        padding: 0;
+        justify-content: center;   
+    }
+    h1{
+        text-align: center;
+    }
+    #questions{
+     
+        margin-left: 0px;
+       
+    }
+    }
+     
+    
